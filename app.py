@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 import tensorflow as tf
 import numpy as np
 
-data = pd.read_csv("/content/drive/MyDrive/Bias_correction_ucl.csv")
+data = pd.read_csv("Bias_correction_ucl.csv")
 if data.isnull().values.any():
     data = data.dropna()
 feature_columns = [
